@@ -9,6 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Beaufort+LoL:wght@500;700&display=swap" rel="stylesheet">
+    <script>
+      // POLYFILL: 为静态部署环境（如 GitHub Pages）提供 process.env 支持
+      // 浏览器没有 Node.js 的 process 环境，直接运行会报错。
+      window.process = {
+        env: {
+          // TODO: 如果你进行静态部署，且没有构建工具注入变量，可以在此处填入你的 API Key。
+          // 警告：在公共仓库中填写 Key 会导致 Key 泄漏被盗用。
+          // 建议：仅在本地调试或私有仓库部署时填写，或使用 GitHub Secrets + CI/CD 构建。
+          API_KEY: "" 
+        }
+      };
+    </script>
     <style>
       /* Custom Fonts to match LoL aesthetic */
       body {
