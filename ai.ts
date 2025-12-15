@@ -89,11 +89,11 @@ export const generateFinalOutcome = async (inventory: GameItem[]): Promise<Final
     - If Resume is STRONG (Prismatic/Gold): The user likely SUCCEEDS or gets an even better offer.
     - Check Major match. If Major is irrelevant to Job (e.g. History Major applying for Algo), failure is highly likely unless Internship is very strong.
 
-    Output Requirements:
-    - Company: The actual company they end up at (could be the target, or a random bad company if failed).
-    - Position: The final role they actually got.
+    Output Requirements (MUST BE IN SIMPLIFIED CHINESE):
+    - Company: The actual company they end up at. Use real Chinese company names.
+    - Position: The final role they actually got. Use Chinese titles.
     - Salary: Annual package in CNY. **MUST USE "万" AS UNIT** (e.g. "35万", "15-20万", "8万").
-    - Desc: Narrative explaining the result (e.g. "You aimed for Google but your resume was filtered, so you are now delivering food." or "Your clear goal led to success.").
+    - Desc: Narrative explaining the result. Keep it under 80 words.
     - tierClass: 
        - 'text-teal-400' (Success/Prismatic), 
        - 'text-purple-400' (Good/Gold), 
