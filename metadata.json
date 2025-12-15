@@ -1,0 +1,5 @@
+{
+  "name": "Hextech Card Select",
+  "description": "A high-fidelity simulation of the Hextech/ARAM style champion selection animation using React and Tailwind CSS.",
+  "requestFramePermissions": []
+}
